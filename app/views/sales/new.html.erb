@@ -1,0 +1,21 @@
+<h1>New Sale</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <%= render 'form', sale: @sale %>
+    </div>
+    <div class="col-md-8">
+      <ul>
+        <li>Enter a Customer Name</li>
+        <li>Press add item to add an item to the sale.</li>
+        <li>From the drop down menu choose a product.</li>
+        <li>Enter a quantity.</li>
+        <li>Repeat as necessary.</li>
+        <li>To remove a product select "Remove Product" immediately under product.</li>
+        <li>To finish creating the sale click "Create Sale".</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Back', sales_path %>
