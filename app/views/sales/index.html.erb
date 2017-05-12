@@ -16,7 +16,7 @@
         <td><%= sale.name %></td>
         <td>$<%= number_with_precision(sale.total, precision: 2) %></td>
         <td><%= link_to 'Show', sale %>
-          <% if can? :update, Sale %>
+          <% if can? :update, Sale %> <!--helper method-->
             | <%= link_to 'Edit', edit_sale_path(sale) %>
           <% end %>
           <% if can? :destroy, Sale %>

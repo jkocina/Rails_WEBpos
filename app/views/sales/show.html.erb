@@ -21,9 +21,9 @@
         <% @sale.items.each do |item| %>
           <tr>
             <td><%= item.product.name %></td>
-            <td><%= item.product.price %></td>
-            <td><%= item.quantity %></td>
-            <td><%= item.total %></td>
+            <td>$<%= number_with_precision(item.product.price, precision: 2) %></td>
+            <td><%= number_with_precision(item.quantity, precision: 0) %></td>
+            <td>$<%= number_with_precision(item.total, precision: 2) %></td>
           </tr>
         <% end %>
       </tbody>

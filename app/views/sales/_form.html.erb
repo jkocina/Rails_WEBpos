@@ -13,8 +13,10 @@
   <% end %>
   <table>
     <tr>
-      <td><%= f.label :Customer %></td>
-      <td><%= f.text_field :name, hide_label: true %></td>
+      <div class="field">
+        <td><%= f.label :Customer %></td>
+        <td><%= f.text_field :name, hide_label: true %></td>
+      </div>
     </tr>
 
   <%= f.fields_for :items do |builder| %>
